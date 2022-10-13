@@ -1,0 +1,13 @@
+{
+    "tasks": [
+        {
+            "type": "deploy-hdb",
+            "modulePath": "${workspaceFolder}/HC_OFF_SUPPLIES1/gen/db",
+            "deployCommand": "npm start -- --exit",
+            "problemMatcher": [
+                "$deploy-hdb"
+            ],
+            "label": "SAP HANA: Deploy module HC_OFF_SUPPLIES1-db-deployer (HC_OFF_SUPPLIES1)"
+        }
+    ]
+}
