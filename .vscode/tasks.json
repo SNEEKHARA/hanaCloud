@@ -8,6 +8,31 @@
                 "$deploy-hdb"
             ],
             "label": "SAP HANA: Deploy module HC_OFF_SUPPLIES1-db-deployer (HC_OFF_SUPPLIES1)"
+        },
+        {
+            "type": "build-mta",
+            "label": "build-mta: Template: Build MTA based on projects/HC_OFF_SUPPLIES1/mta.yaml",
+            "taskType": "shell",
+            "buildType": "Build MTA Project",
+            "mtaFilePath": "/home/user/projects/HC_OFF_SUPPLIES1/mta.yaml"
+        },
+        {
+            "type": "build-mta",
+            "label": "build-mta: Template: Build MTA based on projects/Proj1/mta.yaml",
+            "taskType": "shell",
+            "buildType": "Build MTA Project",
+            "mtaFilePath": "/home/user/projects/Proj1/mta.yaml"
+        },
+        {
+            "type": "npm",
+            "script": "install",
+            "path": "HC_OFF_SUPPLIES1/",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "label": "install - HC_OFF_SUPPLIES1"
         }
     ]
 }

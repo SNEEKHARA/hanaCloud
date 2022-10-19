@@ -3,12 +3,35 @@
   // Hover to view descriptions of existing attributes.
   "version": "0.2.0",
   "configurations": [
+  
     {
       "type": "java",
       "name": "Launch External Terminal",
       "request": "launch",
       "console": "externalTerminal",
       "mainClass": ""
+    },
+    {
+      "name": "Run HC_OFF_SUPPLIES1-2",
+      "request": "launch",
+      "type": "pwa-node",
+      "cwd": "${workspaceFolder}/HC_OFF_SUPPLIES1",
+      "runtimeExecutable": "npx",
+      "args": [
+        "cds",
+        "run",
+        "--in-memory?"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "envFile": "${workspaceFolder}/HC_OFF_SUPPLIES1/.env2",
+      "env": {
+        "NODE_ENV": "development",
+        "run.config": "{\"handlerId\":\"cap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/HC_OFF_SUPPLIES1\\\",\\\"profileName\\\":\\\"development\\\"}\"}"
+      }
     }
   ]
 }

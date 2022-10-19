@@ -1,0 +1,1 @@
+export default class srv {   hello(req) { return `Hello ${req.data.to}!` } } 

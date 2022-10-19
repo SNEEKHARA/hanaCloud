@@ -1,1 +1,10 @@
-{"folders":[{"path":"HC_OFF_SUPPLIES1"}],"settings":{}}
+{
+    "folders": [
+        {
+            "path": "HC_OFF_SUPPLIES1"
+        }
+    ],
+    "settings": {
+        "git.ignoreLimitWarning": true
+    }
+}
